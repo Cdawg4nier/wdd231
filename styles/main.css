@@ -1,0 +1,193 @@
+:root {
+    --header-font: 'Space Mono', 'Franklin Gothic Medium', 'Arial';
+    --primary-font: 'Roboto', 'Gill Sans', 'Gill Sans MT';
+    --secondary-font: 'Amita', 'Times New Roman', Times, serif;
+    --color-1: #000000;
+    --color-2: #41EAD4;
+    --color-3: #FFFBFE;
+    --color-4: #AAA9AD;
+    --color-5: #496A81;
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+#topBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    background-color: var(--color-1);
+    padding: 10px;
+    align-items: center;
+}
+#topBox img {
+    grid-column: 2/3;
+    box-shadow: 0px 0px 10px var(--color-3);
+}
+
+#topBox h1 {
+    font-family: var(--header-font);
+    grid-column: 3/4;
+    font-size: medium;
+    color: var(--color-2);
+    text-shadow: 0px 0px 2px var(--color-3); /* horizontal offset, vertical offset, blur radius, color */
+    margin: 10px;
+}
+
+#BurgerMenu {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    color: var(--color-3);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+nav {
+    display: none;
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+
+nav a {
+    color: var(--color-1);
+    text-decoration: none;
+    text-align: center;
+    padding: 9px;
+    border: 1px solid var(--color-1);
+    border-radius: 3px;
+}
+
+nav a:hover {
+    color: var(--color-2);
+}
+
+nav.burgerExpanded{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/****************************************/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+    margin-top: 10px;
+}
+
+#courseWork, #hometown , #certificateBox{
+    border: 2px solid var(--color-1);
+}
+
+section {
+    margin: 10px;
+    background-color: var(--color-5);
+    font-family: var(--primary-font);
+}
+
+h2 {
+    font-family: var(--header-font);
+    margin: 0px;
+    padding: 7px;
+    background-color: var(--color-4);
+    border-bottom: 2px solid var(--color-1);
+}
+
+#hometown figcaption {
+    font-family: var(--secondary-font);
+    margin-top: 7px;
+}
+
+/*#certificateBox, #filterButtonsBox, #courseDisplayBox*/
+
+#filterButtonsBox {
+    background-color: var(--color-5);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+
+#filterButtonsBox button {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 1.5%;
+    border: none;
+    min-width: 26%;
+}
+
+#courseDisplayBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 20px;
+    background-color: var(--color-1);
+    gap: 1% 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+#courseDisplayBox div {
+    background-color: darkred;
+    color: var(--color-2);
+    margin: 5px;
+    padding: 2%;
+}
+
+#courseDisplayBox .courseCompleted {
+    background-color: darkgreen;
+}
+
+/***************************/
+footer {
+    font-family: var(--secondary-font);
+    background-color: var(--color-1);
+    color: var(--color-2);
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (min-width: 640px) {
+
+    #topBox h1 {
+        font-size: xx-large;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    #BurgerMenu {
+        display: none;
+    }
+
+    /*************************/
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #certificateBox {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    /************************/
+
+    #courseDisplayBox {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

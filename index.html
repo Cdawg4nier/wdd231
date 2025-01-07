@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Assignment 1</title>
+    <meta name="title" content="WDD 231 Assignment 1">
+    <meta name="author" content="Christian Fournier">
+    <meta name="description" content="A simple website to refresh our skills and get ready for the course">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Roboto&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div id="topBox"> 
+        <img src="images/profile.webp" alt="A charming young man on a white and red motorcycle with a blue jacket" height="100">
+        <h1>Christian A. Fournier</h1>
+    </div>
+    <button type="button" id="BurgerMenu" aria-label="Open menu">☰</button>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#chamber">Chamber</a>
+        <a href="#github">GitHub Profile</a>
+        <a href="#linkedin">LinkedIn</a>
+    </nav>
+</header>
+<main>
+    <section id="courseWork">
+        <h2>Course Work</h2>
+        <div>
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </div>
+    </section>
+    <section id="hometown">
+        <h2>Colorado Springs, Colorado</h2>
+        <figure>
+            <img src="images/pikespeak.webp" alt="A massive snowy mountain covered in evergreen trees with a dull grey sky" width = "250">
+            <figcaption>Pikes Peak covered in snow</figcaption>
+        </figure>
+    </section>
+    <section id="certificateBox">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div id="filterButtonsBox">
+            <button type="button" class="filterButton" id="ShowAll" aria-label="Open menu">All</button>
+            <button type="button" class="filterButton" id="ShowCSE" aria-label="Open menu">CSE</button>
+            <button type="button" class="filterButton" id="ShowWDD" aria-label="Open menu">WDD</button>
+        </div>
+        <div id="courseDisplayBox">
+            <div id="CSE110">CSE 110</div>
+            <div id="WDD130">WDD 130</div>
+            <div id="CSE111">CSE 111</div>
+            <div id="CSE210">CSE 210</div>
+            <div id="WDD131">WDD 131</div>
+            <div id="WDD231">WDD 231</div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p> ©<span id="current-year"> </span> 🐉Christian Fournier 🐉 United States</p>
+        <p id="last-modified"></p>
+</footer>
+
+</body>
+</html>
