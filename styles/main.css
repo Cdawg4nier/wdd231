@@ -140,6 +140,12 @@ h2 {
     padding: 2%;
 }
 
+#countBox {
+    padding: 1.5%;
+    color: var(--color-2);
+    background-color: var(--color-1);
+}
+
 #courseDisplayBox .courseCompleted {
     background-color: darkgreen;
 }

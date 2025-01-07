@@ -37,6 +37,8 @@ const courseDisplayBox = document.getElementById('courseDisplayBox');
 const filterButtonWDD = document.getElementById('ShowWDD');
 const filterButtonCSE = document.getElementById('ShowCSE');
 const showAllButton = document.getElementById('ShowAll');
+const countBox = document.getElementById('countBox');
+
 
 const filterByWDD = () => {
     const filteredElements = courseElements.filter(element => element.id.startsWith('WDD'));
@@ -55,6 +57,8 @@ const showAllCourses = () => {
 
 function displayCourses(myArray) {
     courseDisplayBox.innerHTML = '';
+    let totalCourseCredits = 0;
+
     myArray.forEach(element => {
         const container = document.createElement('div');
 
@@ -64,9 +68,11 @@ function displayCourses(myArray) {
         
         if (courseInfo && courseInfo.completed) {
             container.classList.add('courseCompleted');
+            totalCourseCredits += courseInfo.credits;
         }
         container.textContent = `${element.id}`
         courseDisplayBox.appendChild(container);
+        countBox.textContent = `The number of completed credits below is ${totalCourseCredits}`;
     });
 }
 
