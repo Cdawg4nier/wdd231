@@ -2,73 +2,73 @@
     "companies": [
         {
             "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
+            "address": "12333 W Olympic Blvd, Los Angeles, CA 90064, USA",
+            "phonenumber": "719-867-5309",
             "websiteurl": "www.riotgames.com",
             "icon": "images/riotgames.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "Player First. Players Win",
+            "email": "Media@riotgames.com"
         },
         {
-            "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
-            "websiteurl": "www.riotgames.com",
-            "icon": "images/riotgames.svg",
+            "name": "Epic Games",
+            "address": "620 Crossroads Blvd, Cary, NC 27518, USA",
+            "phonenumber": "919-854-0070",
+            "websiteurl": "www.epicgames.com",
+            "icon": "images/epic-games.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "Unreal Engine. Unreal Results.",
+            "email": "press@epicgames.com"
         },
         {
-            "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
-            "websiteurl": "www.riotgames.com",
-            "icon": "images/riotgames.svg",
+            "name": "Electronic Arts",
+            "address": "209 Redwood Shores Pkwy, Redwood City, CA 94065, USA",
+            "phonenumber": "650-628-1500",
+            "websiteurl": "www.ea.com",
+            "icon": "images/ea.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "We exist to inspire the world to play",
+            "email": "press@ea.com"
         },
         {
-            "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
-            "websiteurl": "www.riotgames.com",
-            "icon": "images/riotgames.svg",
+            "name": "Respawn Entertainment",
+            "address": "2215 Faraday Ave, Suite 100, Carlsbad, CA 92008, USA",
+            "phonenumber": "720-867-5309",
+            "websiteurl": "www.respawn.com",
+            "icon": "images/arrow-square-right.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "We make games we love",
+            "email": "press@respawn.com"
         },
         {
-            "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
-            "websiteurl": "www.riotgames.com",
-            "icon": "images/riotgames.svg",
+            "name": "Ubisoft",
+            "address": "28 Rue Armand Carrel, 93100 Montreuil, France",
+            "phonenumber": "33-1-48-18-50-00",
+            "websiteurl": "www.ubisoft.com",
+            "icon": "images/ubisoft.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "A better world to play in",
+            "email": "press@ubisoft.com"
         },
         {
-            "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
-            "websiteurl": "www.riotgames.com",
-            "icon": "images/riotgames.svg",
+            "name": "Nintendo",
+            "address": "11-1 Kamitoba Hokotate-cho, Minami-ku, Kyoto 601-8501, Japan",
+            "phonenumber": "81-75-662-9600",
+            "websiteurl": "www.nintendo.com",
+            "icon": "images/nintendo-switch.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "Think, dream, create",
+            "email": "press@nintendo.com"
         },
         {
-            "name": "Riot Games",
-            "address": "1921 fieldcrest drive",
-            "phonenumber": "7193626271",
-            "websiteurl": "www.riotgames.com",
-            "icon": "./images/riotgames.svg",
+            "name": "Capcom",
+            "address": "3-1-3 Uchihirano-machi, chuo-ku, Osaka 540-0037, Japan",
+            "phonenumber": "81-6-6920-8700",
+            "websiteurl": "www.capcom.com",
+            "icon": "images/c-letter.svg",
             "membershiplevel": 1,
-            "tagline": "Only the most mid video game company on the planet",
-            "email": "RiotGames@gmail.com"
+            "tagline": "Creator of Entertainment Culture that Stimulates Your Senses",
+            "email": "press@capcom.com"
         }
     ]
 }
