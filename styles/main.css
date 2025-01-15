@@ -45,9 +45,14 @@ body {
 }
 
 nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
     background-color: var(--color-4);
     color: var(--color-1);
+    transition: max-height .5s ease-out;
+    margin-top: 20px;
 }
 
 nav a {
@@ -64,10 +69,8 @@ nav a:hover {
 }
 
 nav.burgerExpanded{
-    display: flex;
-    flex-direction: column;
+    max-height: 200px;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 /****************************************/

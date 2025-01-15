@@ -1,0 +1,233 @@
+:root {
+    --header-font: 'Space Mono', 'Franklin Gothic Medium', 'Arial';
+    --primary-font: 'Roboto', 'Gill Sans', 'Gill Sans MT';
+    --secondary-font: 'Amita', 'Times New Roman', Times, serif;
+    --color-1: #000000;
+    --color-2: #41EAD4;
+    --color-3: #FFFBFE;
+    --color-4: #AAA9AD;
+    --color-5: #496A81;
+}
+/***************************/
+/* Header Content */
+
+body {
+    background-color: darkslategrey;
+}
+
+#topBox {
+    background-color: var(--color-1);
+    padding: 2%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% 1fr;
+    align-items: end;
+}
+
+#topBox img {
+    width: 80%;
+    height: auto;
+}
+#topBox div {
+    padding: 2%
+}
+
+#topBox h1, h2 {
+    font-family: var(--header-font);
+    color: var(--color-2);
+}
+
+#topBox h1 {
+    font-size: x-large;
+}
+
+#BurgerMenu {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    color: var(--color-3);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+nav {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: var(--color-1);
+    transition: max-height .5s ease-out;
+}
+
+nav a {
+    color: var(--color-2);
+    text-decoration: none;
+    text-align: center;
+    padding: 9px;
+    border: 1px solid var(--color-1);
+    border-radius: 3px;
+}
+
+nav a:hover {
+    color: var(--color-2);
+}
+
+nav.burgerExpanded{
+    max-height: 200px;
+    justify-content: space-around;
+}
+/***************************/
+/* Main Content */
+#mainContentLabel {
+    margin-top: 2%;
+    font-size: xx-large;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+main button {
+    margin-top: 2%;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    text-align: center;
+    padding: 2%;
+    width: 45%;
+}
+
+#buttonBox {
+    display: flex;
+    justify-content: space-around;
+}
+.buttonToggled {
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+
+#cards {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2%;
+    margin: 2%;
+    padding: 2%;
+    background-color: var(--color-5);
+    color: var(--color-1);
+    border: 3px solid var(--color-1);
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+#cards h2, h3 {
+    font-family: var(--header-font);
+    color: var(--color-1);
+}
+
+#cards h2 {
+    font-size: x-large;
+}
+
+.company-card {
+    box-sizing: border-box;
+    background-color: var(--color-4);
+    border: 2px solid var(--color-1);
+    border-radius: 10px;
+}
+
+.introBox {
+    border-bottom: 1px solid var(--color-1);
+    text-align: center;
+}
+
+.companyDetails{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    padding: 2%;
+}
+
+.cardTextBox a {
+    color: black;
+}
+
+.cardTextBox a:visited{
+    color: black;
+}
+
+/***************************/
+/*Footer Content */
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    font-family: var(--primary-font);
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 15px;
+}
+
+#socialIconsBox{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 640px) {
+
+/***************************/
+/* Header Content */
+    #topBox {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 5% 15% 35% 1fr 1fr;
+    }
+    #topBox img {
+        grid-column: 2/3;
+        width: 100%;
+    }
+    #topBox div {
+        grid-column: 3/4;
+        margin: auto;
+    }
+
+    #topBox h1 {
+        font-size: x-large;
+    }
+
+    nav {
+        grid-column: 5/6;
+        display: flex;
+        max-height: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: visible;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    #BurgerMenu {
+        display: none;
+    }
+
+/***************************/
+/* Main Content */
+
+
+#cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#cards.listView {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+/***************************/
+/*Footer Content */
+    footer {
+        grid-template-columns: 30% 30% 30%;
+    }
+}

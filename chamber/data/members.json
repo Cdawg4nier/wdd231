@@ -1,0 +1,74 @@
+{
+    "companies": [
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        },
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        },
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        },
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        },
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        },
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        },
+        {
+            "name": "Riot Games",
+            "address": "1921 fieldcrest drive",
+            "phonenumber": "7193626271",
+            "websiteurl": "www.riotgames.com",
+            "icon": "./images/riotgames.svg",
+            "membershiplevel": 1,
+            "tagline": "Only the most mid video game company on the planet",
+            "email": "RiotGames@gmail.com"
+        }
+    ]
+}

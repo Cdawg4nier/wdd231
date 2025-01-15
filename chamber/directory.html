@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Assignment 2 Chamber Directory</title>
+    <meta name="title" content="WDD 231 Assignment 2 Chamber Directory">
+    <meta name="author" content="Christian Fournier">
+    <meta name="description" content="The directory page for the Chamber website">
+    <meta property="og:title" content="WDD 231 Assignment 2 Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://cdawg4nier.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="@Cdawg4nier">
+    <meta name="twitter:creator" content="@Cdawg4nier">
+    <meta name="twitter:title" content="WDD 231 Assignment 2 Chamber Directory">
+    <meta name="twitter:description" content="The directory page for the Chamber website">
+    <meta name="twitter:image" content="">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Roboto&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div id="topBox"> 
+            <img src="images/CoC_Logo.webp" alt="A black, brown, and green 2d rendition of Yggsdrasil, the world tree" height="100">
+            <div>
+                <h1>Dragon's Hoard</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        
+            <button type="button" id="BurgerMenu" aria-label="Open menu">☰</button>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./directory.html">Directory</a>
+                <a href="./join.html">Join</a>
+                <a href="./discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h3 id="mainContentLabel">Current Members</h3>
+        <div id="buttonBox">
+            <button type="button" class ="buttonToggled" id="GridView" aria-label="Grid View">Grid</button>
+            <button type="button" id="ListView" aria-label="List View">List</button>
+        </div>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div id="contactInfoBox">
+            <p>Dragon's Hoard Chamber of Commerce</p>
+            <p>1234 South Seoul Street</p>
+            <p>Seoul, South Korea 626115</p>
+            <p>ancientone@dragonshoardcoc.com</p>
+            <p>(626)867-5309</p>
+        </div>
+        <div id="socialIconsBox">
+            <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="youtube logo" width="50"></a>
+            <a href="https://x.com/"><img src="images/big-x.svg" alt="x.com logo" width="50"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn logo" width="50"></a>
+        </div>
+        <div id="personalInfoBox">
+            <p>WDD231 Class Project</p>
+            <p>🐉Christian Fournier 🐉</p>
+            <p> ©<span id="current-year"> </span> Dragon's Hoard Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    
+    </body>
+</html>
