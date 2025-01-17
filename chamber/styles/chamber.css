@@ -80,6 +80,8 @@ nav.burgerExpanded{
 }
 /***************************/
 /* Main Content */
+
+/* Directory Content */
 #mainContentLabel {
     margin-top: 2%;
     font-size: xx-large;
@@ -157,6 +159,90 @@ main button {
     color: black;
 }
 
+/* Home Content */
+#homeLabel {
+    font-family: var(--header-font);
+    color: var(--color-1);
+    margin-left: 15%;
+    margin-right: 65%;
+    font-size: xx-large;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#callToAction {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-4);
+    padding-bottom: 20px;
+    padding-top: 2%;
+}
+#callToAction img {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    display: block;
+}
+#callToAction a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--color-1);
+    padding: 10px 20px;
+    color: var(--color-2);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--color-2);
+    border-radius: 5px;
+}
+
+#homepageLower {
+    display: grid;
+    grid-template-columns: 10% 2fr 1fr 2fr 10%;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+
+#homepageLower h4 {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 10px;
+    border-radius: 5px;
+}
+#eventsBox, #currentWeather, #weatherForecast {
+    padding: 10px;
+    background-color: var(--color-5);
+    border: 2px solid var(--color-1);
+    border-radius: 3px;
+}
+
+#eventsBox {
+    grid-column: 2/3;
+}
+#currentWeather p, #weatherForecast p {
+    margin: 5px;
+    text-align: center;
+}
+#currentWeather {
+    grid-column: 3/4;
+}
+#weatherForecast {
+    grid-column: 4/5;
+}
+
+
+#showcaseBox {
+    background-color: var(--color-4);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4%;
+    gap: 10px;
+}
 /***************************/
 /*Footer Content */
 footer {

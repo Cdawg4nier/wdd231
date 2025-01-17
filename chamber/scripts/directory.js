@@ -5,10 +5,11 @@ footerYear.textContent = currentYear;
 const footerLastModified = document.querySelector("#last-modified");
 footerLastModified.textContent = `Last Modification: ${document.lastModified}`;
 
-const burgerButton = document.querySelector('#BurgerMenu')
-const navElement = document.querySelector('nav')
-let isBurgerMenuVisible = false;
+const burgerButton = document.querySelector('#BurgerMenu');
+const navElement = document.querySelector('nav');
 
+
+let isBurgerMenuVisible = false;
 burgerButton.addEventListener("click", function () {
     navElement.classList.toggle("burgerExpanded")
     isBurgerMenuVisible = !isBurgerMenuVisible;
@@ -86,6 +87,10 @@ const displayCompanies = (companies) => {
     let website = document.createElement("p");
     website.innerHTML = `<strong>URL:</strong> <a href=${company.websiteurl}> ${company.websiteurl} </a>`;
     textBox.appendChild(website);
+
+    let membershipLevel = document.createElement("p");
+    membershipLevel.innerHTML = `<strong>Membership Level:</strong> ${company.membershiplevel}`;
+    textBox.appendChild(membershipLevel);
 
     details.appendChild(textBox);
     card.appendChild(details);

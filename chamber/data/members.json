@@ -6,7 +6,7 @@
             "phonenumber": "719-867-5309",
             "websiteurl": "www.riotgames.com",
             "icon": "images/riotgames.svg",
-            "membershiplevel": 1,
+            "membershiplevel": 2,
             "tagline": "Player First. Players Win",
             "email": "Media@riotgames.com"
         },
@@ -16,7 +16,7 @@
             "phonenumber": "919-854-0070",
             "websiteurl": "www.epicgames.com",
             "icon": "images/epic-games.svg",
-            "membershiplevel": 1,
+            "membershiplevel": 2,
             "tagline": "Unreal Engine. Unreal Results.",
             "email": "press@epicgames.com"
         },
@@ -36,7 +36,7 @@
             "phonenumber": "720-867-5309",
             "websiteurl": "www.respawn.com",
             "icon": "images/arrow-square-right.svg",
-            "membershiplevel": 1,
+            "membershiplevel": 2,
             "tagline": "We make games we love",
             "email": "press@respawn.com"
         },
@@ -66,7 +66,7 @@
             "phonenumber": "81-6-6920-8700",
             "websiteurl": "www.capcom.com",
             "icon": "images/c-letter.svg",
-            "membershiplevel": 1,
+            "membershiplevel": 3,
             "tagline": "Creator of Entertainment Culture that Stimulates Your Senses",
             "email": "press@capcom.com"
         }
