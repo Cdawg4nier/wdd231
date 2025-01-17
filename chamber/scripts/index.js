@@ -111,6 +111,7 @@ const displayCompanies = (companies) => {
     let icon = document.createElement("img");
     icon.setAttribute ("src", company.icon);
     icon.setAttribute ("height", "80");
+    icon.setAttribute ("loading", "lazy");
     icon.alt = `Icon for ${company.name}`;
     details.appendChild(icon);
 

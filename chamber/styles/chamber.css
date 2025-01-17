@@ -137,9 +137,14 @@ main button {
     border-radius: 10px;
 }
 
+.company-card h2 {
+    color: black;
+}
+
 .introBox {
     border-bottom: 1px solid var(--color-1);
     text-align: center;
+    color: var(--color-1);
 }
 
 .companyDetails{
@@ -216,7 +221,7 @@ main button {
 }
 #eventsBox, #currentWeather, #weatherForecast {
     padding: 10px;
-    background-color: var(--color-5);
+    background-color: var(--color-4);
     border: 2px solid var(--color-1);
     border-radius: 3px;
 }
