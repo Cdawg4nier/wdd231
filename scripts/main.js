@@ -163,3 +163,30 @@ const courses = [
         completed: false
     }
 ]
+
+function displayCourseDetails(course) {
+    let courseDetails = document.createElement('details');
+    courseDetails.innerHTML = `
+    <button id=closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.closest();
+    });
+}
+
+courseElements.forEach(div => {
+    div.addEventListener('click', () => {
+        let course = courses.find(course => 
+            `${course.subject}${course.number}` === element.id
+        );
+        displayCourseDetails(course);
+    });
+});

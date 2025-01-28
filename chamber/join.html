@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Assignment 2 Chamber Directory</title>
+    <meta name="title" content="WDD 231 Assignment 2 Chamber Join Page">
+    <meta name="author" content="Christian Fournier">
+    <meta name="description" content="A Page for the CoC that allows the user to Join">
+    <meta property="og:title" content="WDD 231 Assignment 2 Chamber Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/CoC_Logo.webp">
+    <meta property="og:url" content="https://cdawg4nier.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="images/CoC_Logo.webp">
+    <meta name="twitter:site" content="@Cdawg4nier">
+    <meta name="twitter:creator" content="@Cdawg4nier">
+    <meta name="twitter:title" content="WDD 231 Assignment 2 Chamber Join">
+    <meta name="twitter:description" content="The Join Us page for the Chamber website">
+    <meta name="twitter:image" content="images/CoC_Logo.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Roboto&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="topBox">
+            <img src="images/CoC_Logo.webp" alt="A black, brown, and green 2d rendition of Yggsdrasil, the world tree"
+                height="100">
+            <div>
+                <h1>Dragon's Hoard</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+            <button type="button" id="BurgerMenu" aria-label="Open menu">☰</button>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./directory.html">Directory</a>
+                <a href="./join.html">Join</a>
+                <a href="./discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h3>Join our Chamber</h3>
+        <div id="formBox">
+            <form method="GET" action="thankyou.html">
+                <label>First Name* <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name* <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Organizational Title <input type="text" name="organizational-title"
+                        autocomplete="organization-title" pattern="[a-zA-Z\s-]{7,}"
+                        title="Your Organizational Title"></label>
+                <label>Email* <input type="email" name="email" required placeholder="yourEmailHere@gmail.com"
+                        title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone* <input type="tel" name="phone" required autocomplete="tel"
+                        title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                <label>Organization*<input type="text" name="organization" required autocomplete="organization"
+                        title="Your Organization"></label>
+
+
+                <h4>Select Membership Level*</h4>
+                <label><input type="radio" name="membershipLevel" value="NP" checked> Non-Profit (NP)</label>
+                <label><input type="radio" name="membershipLevel" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membershipLevel" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membershipLevel" value="Gold"> Gold Membership</label>
+
+
+                <label>Description<textarea name="desc" , title="Your Business Description"
+                        placeholder="Your description here..."></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
+
+                <input type="submit" value="Join our CoC">
+            </form>
+
+            <div id="membershipContainer">
+                <div class="membershipCard" id="NP">
+                    <h4>Non-Profit Membership</h4>
+                    <button type="button" id="NPButton" aria-label="Details on NP Membership">More Details</button>
+                    <dialog id="NPDialogue">
+                        <h6>Non-Profit Membership</h6>
+                        <p>The Non-Profit membership includes:<br><br>
+                            - Inclusion in our Directory<br>
+                            - Event Discounts<br>
+                            - Networking Event Access <br>
+                            - Guides to navigating local regulations
+                        </p>
+                        <button id="closeBtnNP">Close</button>
+                    </dialog>
+                </div>
+                <div class="membershipCard" id="Bronze">
+                    <h4>Bronze Membership</h4>
+                    <button type="button" id="BronzeButton" aria-label="Details on Bronze Membership">More
+                        Details</button>
+                    <dialog id="BronzeDialogue">
+                        <h6>Bronze Membership</h6>
+                        <p>The Bronze membership includes:<br><br>
+                            - Bronze Seal in directory<br>
+                            - Event Sponsorship<br>
+                            - Business Referrals<br>
+                            - Member-only webinars and workships
+                        </p>
+                        <button id="closeBtnBR">Close</button>
+                    </dialog>
+                </div>
+                <div class="membershipCard" id="Silver">
+                    <h4>Silver Membership</h4>
+                    <button type="button" id="SilverButton" aria-label="Details on Silver Membership">More
+                        Details</button>
+                    <dialog id="SilverDialogue">
+                        <h6>Silver Membership</h6>
+                        <p>The Silver membership includes:<br><br>
+                            - Silver Seal in directory, eligable to be featured in our front page<br>
+                            - Mentorship Program<br>
+                            - Member Discounts<br>
+                            - VIP Event Access <br>
+                            - Legislative Advocacy
+                        </p>
+                        <button id="closeBtnSI">Close</button>
+                    </dialog>
+                </div>
+                <div class="membershipCard" id="Gold">
+                    <h4>Gold Membership</h4>
+                    <button type="button" id="GoldButton" aria-label="Details on Gold Membership">More Details</button>
+                    <dialog id="GoldDialogue">
+                        <h6>Gold Membership</h6>
+                        <p>The Gold membership includes:<br><br>
+                            - Gold Seal in directory, eligable to be featured in our front page and in newsletters<br>
+                            - Exclusive Sponsorship<br>
+                            - Customized Business Services<br>
+                            - Board Membership<br>
+                            - Free event attendance<br>
+                        </p>
+                        <button id="closeBtnGO">Close</button>
+                    </dialog>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contactInfoBox">
+            <p>Dragon's Hoard Chamber of Commerce</p>
+            <p>1234 South Seoul Street</p>
+            <p>Seoul, South Korea 626115</p>
+            <p>ancientone@dragonshoardcoc.com</p>
+            <p>(626)867-5309</p>
+        </div>
+        <div id="socialIconsBox">
+            <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="youtube logo" width="50"></a>
+            <a href="https://x.com/"><img src="images/big-x.svg" alt="x.com logo" width="50"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn logo" width="50"></a>
+        </div>
+        <div id="personalInfoBox">
+            <p>WDD231 Class Project</p>
+            <p>🐉Christian Fournier 🐉</p>
+            <p> ©<span id="current-year"> </span> Dragon's Hoard Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
