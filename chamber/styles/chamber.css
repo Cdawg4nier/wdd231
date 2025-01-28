@@ -267,55 +267,62 @@ form {
     background-color: var(--color-1);
     padding: 2%;
     border-radius: 5px;
+  }
   
-    label {
-      display: block;
-      font-size: 20px;
-      color: var(--color-2);
-      padding-top: .2rem;
-    }
-    h4 {
-      font-size: 15px;
-      color: var(--color-2);
-      margin: 1.5rem 0 .2rem 0;
-      border-bottom: 1px solid #eee;
-    }
+  form label {
+    display: block;
+    font-size: 20px;
+    color: var(--color-2);
+    padding-top: .2rem;
+  }
   
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select,
-    textArea {
-      display: block;
-      margin: 5px 0 15px 0 ;
-      padding: 15px;
-      border: 1px solid #999;
-      border-radius: 4px;
-      border-left-width: 5px;
-      border-left-color:#555;
-      font-size: 1rem;
-      color: #3D405B;
-      width: 150px;
-    }
-
-    input[type=radio] {
-        margin-bottom: 20px;
-    }
+  form h4 {
+    font-size: 15px;
+    color: var(--color-2);
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+  }
   
-    input:required {border-left-color: var(--color-2);}
-    input:focus {border-left-color: var(--color-1); outline:none;}
+  form input[type=text],
+  form input[type=tel],
+  form input[type=date],
+  form input[type=email],
+  form select,
+  form textarea {
+    display: block;
+    margin: 5px 0 15px 0;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 150px;
+  }
   
-    input[type=submit] {
-      border: none;
-      text-align: center;
-      background-color: var(--color-4);
-      color: var(--color-1);
-      border-radius: 10px;
-      padding: .75rem 1.5rem;
-      margin: 2rem 0;
-      font-size: 1.2rem;
-    }
+  form input[type=radio] {
+    margin-bottom: 20px;
+  }
+  
+  input:required {
+    border-left-color: var(--color-2);
+  }
+  
+  input:focus {
+    border-left-color: var(--color-1);
+    outline: none;
+  }
+  
+  form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    border-radius: 10px;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
   }
 
 
@@ -334,72 +341,71 @@ form {
     }
   }
 
-#membershipContainer {
+  #membershipContainer {
     text-align: center;
     color: var(--color-2);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    h4 {
-        padding: 10px;
-        font-size: 20px;
-    }
-    div {
-        background-color: var(--color-1);
-        padding: 10px;
-        border-radius: 10px;
-    }
+}
 
-    #NP {
-        background-color: white;
-        color: black;
-        animation: wiggle 8s linear infinite;
-    }
+#membershipContainer h4 {
+    padding: 10px;
+    font-size: 20px;
+}
 
-    #Bronze {
-        background-color: bisque;
-        color: black;
-        animation: wiggle 6s linear infinite;
-    }
+#membershipContainer div {
+    background-color: var(--color-1);
+    padding: 10px;
+    border-radius: 10px;
+}
 
-    #Silver {
-        background-color: silver;
-        color: black;
-        animation: wiggle 4s linear infinite;
-    }
+#membershipContainer #NP {
+    background-color: white;
+    color: black;
+    animation: wiggle 8s linear infinite;
+}
 
-    #Gold {
-        background-color: gold;
-        color: black;
-        animation: wiggle 2s linear infinite;
-    }
+#membershipContainer #Bronze {
+    background-color: bisque;
+    color: black;
+    animation: wiggle 6s linear infinite;
+}
 
-    
+#membershipContainer #Silver {
+    background-color: silver;
+    color: black;
+    animation: wiggle 4s linear infinite;
+}
 
-    button {
-        border-radius: 10px;
-        border: 1px solid var(--color-3);
-    }
+#membershipContainer #Gold {
+    background-color: gold;
+    color: black;
+    animation: wiggle 2s linear infinite;
+}
 
+#membershipContainer button {
+    border-radius: 10px;
+    border: 1px solid var(--color-3);
+}
 
-    dialog {
-        margin: auto auto;
-        padding: 20px;
-        background-color: var(--color-1);
-        border: 2px solid var(--color-2);
-        border-radius: 10px;
+#membershipContainer dialog {
+    margin: auto auto;
+    padding: 20px;
+    background-color: var(--color-1);
+    border: 2px solid var(--color-2);
+    border-radius: 10px;
+}
 
-        h6 {
-            border-bottom: 1px solid var(--color-2);
-            color: var(--color-2);
-            margin-bottom: 15px;
-        }
+#membershipContainer dialog h6 {
+    border-bottom: 1px solid var(--color-2);
+    color: var(--color-2);
+    margin-bottom: 15px;
+}
 
-        p {
-            color: var(--color-2);
-            margin-bottom: 15px;
-        }
-    }
+#membershipContainer dialog p {
+    color: var(--color-2);
+    margin-bottom: 15px;
 }
 
 ::backdrop {
