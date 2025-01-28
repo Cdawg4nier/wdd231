@@ -28,7 +28,7 @@ function showData(target) {
     let result = ''
     formData.forEach((str) => {
         if (str.startsWith(target)) {
-            result = str.split('=')[1].replace("%40", "@");
+            result = str.split('=')[1].replace("%40", "@").replace('+', " ").replace('+', " ");
         }
     });
     return result;

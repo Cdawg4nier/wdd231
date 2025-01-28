@@ -108,7 +108,7 @@ main button {
     color: var(--color-1);
 }
 
-#cards {
+#cards, #thankYouBox {
     display: grid;
     grid-template-rows: 1fr;
     gap: 2%;
@@ -193,7 +193,7 @@ main button {
     height: auto;
     display: block;
 }
-#callToAction a {
+#callToAction a{
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -410,6 +410,10 @@ form {
 
 ::backdrop {
     background-color: rgb(0 0 0 / .5);
+}
+
+#thankYouBox {
+
 }
 /***************************/
 /*Footer Content */
